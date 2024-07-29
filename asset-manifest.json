@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-2024-actual/static/css/main.4f5dc5ac.css",
+    "main.js": "/react-2024-actual/static/js/main.c34e386c.js",
+    "index.html": "/react-2024-actual/index.html",
+    "main.4f5dc5ac.css.map": "/react-2024-actual/static/css/main.4f5dc5ac.css.map",
+    "main.c34e386c.js.map": "/react-2024-actual/static/js/main.c34e386c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f5dc5ac.css",
+    "static/js/main.c34e386c.js"
+  ]
+}
