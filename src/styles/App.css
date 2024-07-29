@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  width: 800px;
+}
+
+.post {
+  display: flex;
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.post_btns {
+  display: flex;
+}
+
+.post_btns button {
+  padding: 5px;
+  border-radius: 7px;
+  background: rgb(202, 68, 68);
+  color: white;
+  border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post_btns button:hover {
+  background-color: rgb(221, 3, 3);
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+.post_btns button:active {
+  background-color: rgb(228, 2, 2);
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.post-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.post-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms ease-in,
+    transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.post-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.post-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 500ms ease-in,
+    transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.modal-exit {
+  opacity: 1;
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.page__wrapper {
+  margin-top: 30px;
+  display: flex;
+}
+.page {
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+.page__current {
+  border: 2px solid orange;
+  font-weight: bold;
+}
+
+/*--------------------------------------*/
+.navbar {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  background-color: lightgray;
+}
+
+.navbar__link {
+  margin: auto;
+}
